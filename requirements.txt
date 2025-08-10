@@ -1,0 +1,18 @@
+# Core ML frameworks
+torch
+torchvision
+torchaudio
+
+# YOLOv11 by Ultralytics
+ultralytics>=8.3.0
+
+# Data handling & visualization
+numpy
+pandas
+matplotlib
+seaborn
+opencv-python
+
+# Utilities
+tqdm
+PyYAML
