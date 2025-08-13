@@ -59,16 +59,23 @@ The model was trained and tested on a custom dataset prepared specifically for t
 
 ---
 
-## 📊 Results
+## 📊 Model Comparison – YOLO11n vs YOLO11s
 
-| Metric    | YOLO11n | YOLO11s |
-|-----------|---------|---------|
-| Precision | 0.873   | 0.875   |
-| Recall    | 0.834   | 0.830   |
-| mAP@50    | 0.903   | 0.905   |
-| mAP@50–95 | 0.656   | 0.661   |
+| Metric                    | YOLO11n | YOLO11s | % Difference (YOLO11s vs YOLO11n) | 
+|---------------------------|---------|---------|-----------------------------------|
+| **Precision**             | 0.873   | 0.875   | **+0.23%**                        | 
+| **Recall**                | 0.834   | 0.830   | **-0.48%**                        | 
+| **mAP@50**                | 0.903   | 0.905   | **+0.22%**                        | 
+| **mAP@50–95**             | 0.656   | 0.661   | **+0.76%**                        | 
+| **FPS** (Inference Speed) | ~62 FPS | ~45 FPS | **-27%** (YOLO11s is slower)      | 
+| **Latency** (ms/img)      | ~16 ms  | ~22 ms  | **+37%** (YOLO11s takes longer)   |
 
 ---
+
+### ⚡ Speed & Accuracy Insights
+- **YOLO11n** → ~**38% faster** inference speed with lower VRAM usage.  
+- **YOLO11s** → ~**0.5% higher** mAP scores, offering a slight accuracy boost.  
+- **Trade-off** → YOLO11n is ideal for **real-time applications**, while YOLO11s suits **offline analysis or high-resource environments** where accuracy is the top priority.
 
 ## 🏁 Conclusion
 
